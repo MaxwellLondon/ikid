@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eyn-Nn-ylf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hb2-rs-FEo">
+            <objects>
+                <tabBarController id="Eyn-Nn-ylf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yWJ-Wb-6Tv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OUo-eS-p1l" kind="relationship" relationship="viewControllers" id="22I-lb-XSw"/>
+                        <segue destination="bts-dA-u8C" kind="relationship" relationship="viewControllers" id="whL-Q3-KqP"/>
+                        <segue destination="aJK-0g-QQF" kind="relationship" relationship="viewControllers" id="cCa-KA-xBg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfG-H6-Zli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-10"/>
+        </scene>
+        <!--Good-->
+        <scene sceneID="Ogr-tO-EnT">
+            <objects>
+                <viewController id="OUo-eS-p1l" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WVk-WS-x3G" customClass="Ans">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Some people, when confronted with a problem, think, 'I know, I'll use threads'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gob-0H-JG1">
+                                <rect key="frame" x="186" y="438" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nHZ-xg-KaJ">
+                                <rect key="frame" x="340" y="782" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="7OR-Xw-X5e" kind="presentation" modalTransitionStyle="flipHorizontal" id="jKf-cb-Lgp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6QG-uG-gCM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gob-0H-JG1" firstAttribute="centerX" secondItem="6QG-uG-gCM" secondAttribute="centerX" id="ABn-ZG-5E7"/>
+                            <constraint firstItem="gob-0H-JG1" firstAttribute="centerY" secondItem="6QG-uG-gCM" secondAttribute="centerY" id="FW0-Co-CQT"/>
+                            <constraint firstItem="nHZ-xg-KaJ" firstAttribute="bottom" secondItem="6QG-uG-gCM" secondAttribute="bottom" id="pic-Gk-SRx"/>
+                            <constraint firstItem="6QG-uG-gCM" firstAttribute="trailing" secondItem="nHZ-xg-KaJ" secondAttribute="trailing" constant="20" id="tQd-R5-OG6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Good" id="LjF-Xm-ON5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrS-uS-2oV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217.3913043478262" y="744.64285714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fsd-ZR-Fce">
+            <objects>
+                <viewController id="7OR-Xw-X5e" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SzE-LF-IbA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="And then two they hav erpoblesms." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZO-in-oz1">
+                                <rect key="frame" x="148" y="411" width="269" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pt3-cY-jga"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RZO-in-oz1" firstAttribute="centerY" secondItem="pt3-cY-jga" secondAttribute="centerY" id="7NN-LD-vLG"/>
+                            <constraint firstItem="RZO-in-oz1" firstAttribute="centerX" secondItem="pt3-cY-jga" secondAttribute="centerX" id="lfR-GS-HwZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aED-dc-AS0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMm-yw-M98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217.3913043478262" y="1459.8214285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cOA-Ae-xQy">
+            <objects>
+                <viewController id="udb-w6-bgE" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F8Q-8Z-0Ku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I said it must be my weekend immune system." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-8D-L2b">
+                                <rect key="frame" x="148" y="411" width="348" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I8v-O7-shG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WD6-8D-L2b" firstAttribute="centerX" secondItem="I8v-O7-shG" secondAttribute="centerX" id="6uE-4e-r0r"/>
+                            <constraint firstItem="WD6-8D-L2b" firstAttribute="centerY" secondItem="I8v-O7-shG" secondAttribute="centerY" id="XQZ-ce-GPk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqi-bJ-Xm5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjo-hJ-6wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="1460"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ecr-Rd-TbI">
+            <objects>
+                <viewController id="tMR-pM-rnP" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LFN-KK-AlT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Because he didn’t get the… algo-rhythm…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tP7-fe-n7K">
+                                <rect key="frame" x="148" y="411" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dw6-Ra-hvq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tP7-fe-n7K" firstAttribute="centerY" secondItem="dw6-Ra-hvq" secondAttribute="centerY" id="Wbw-60-DGP"/>
+                            <constraint firstItem="tP7-fe-n7K" firstAttribute="centerX" secondItem="dw6-Ra-hvq" secondAttribute="centerX" id="zDn-Xo-Gqc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TSZ-8g-kY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94l-Sv-yAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="1460"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="Pui-aM-tBG">
+            <objects>
+                <viewController id="bts-dA-u8C" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APC-YX-Z6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My boss asked me why I only get sick on work days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-lG-LzC">
+                                <rect key="frame" x="186" y="438" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-Wu-sSD">
+                                <rect key="frame" x="340" y="782" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="udb-w6-bgE" kind="presentation" modalTransitionStyle="flipHorizontal" id="4qs-Dc-G21"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jl4-cA-Qjs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iSV-lG-LzC" firstAttribute="centerY" secondItem="Jl4-cA-Qjs" secondAttribute="centerY" id="Ti9-Rb-gYM"/>
+                            <constraint firstItem="Jl4-cA-Qjs" firstAttribute="trailing" secondItem="Cbg-Wu-sSD" secondAttribute="trailing" constant="20" id="Z6e-ty-nJ5"/>
+                            <constraint firstItem="iSV-lG-LzC" firstAttribute="centerX" secondItem="Jl4-cA-Qjs" secondAttribute="centerX" id="r4p-PZ-Zvm"/>
+                            <constraint firstItem="Cbg-Wu-sSD" firstAttribute="bottom" secondItem="Jl4-cA-Qjs" secondAttribute="bottom" id="xoc-qF-b4x"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" id="5Sk-Hh-Q5z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8G-yH-BRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="745"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="CgI-yA-xlM">
+            <objects>
+                <viewController id="aJK-0g-QQF" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ut3-Kj-beM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Why couldn’t the programmer dance to the song?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vym-8r-Iyj">
+                                <rect key="frame" x="186" y="438" width="378" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q48-SM-4HX">
+                                <rect key="frame" x="340" y="782" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="tMR-pM-rnP" kind="presentation" modalTransitionStyle="flipHorizontal" id="TWg-QY-8bq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XWM-F4-2pc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vym-8r-Iyj" firstAttribute="centerX" secondItem="XWM-F4-2pc" secondAttribute="centerX" id="AxB-lC-7o0"/>
+                            <constraint firstItem="XWM-F4-2pc" firstAttribute="trailing" secondItem="q48-SM-4HX" secondAttribute="trailing" constant="20" id="Hbf-YO-iuS"/>
+                            <constraint firstItem="q48-SM-4HX" firstAttribute="bottom" secondItem="XWM-F4-2pc" secondAttribute="bottom" id="mW6-bO-MvU"/>
+                            <constraint firstItem="vym-8r-Iyj" firstAttribute="centerY" secondItem="XWM-F4-2pc" secondAttribute="centerY" id="myW-Vo-Ol1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" id="Fks-YT-8Gm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDF-cT-LUT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
